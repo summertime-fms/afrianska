@@ -1,0 +1,46 @@
+.intro {
+  padding-bottom: 190px;
+  background-image: url("../img/intro-illustration.png"), linear-gradient(#ffffff 66.39%, rgba(#98c3e8, 20%) 100%);
+  background-repeat: no-repeat;
+  background-position: 78% 10%, 100% 100%;
+  background-size: 45% 100%, 100% 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/intro-illustration@2x.png");
+  }
+}
+
+.intro__inner {
+  .container;
+  padding-top: 100px;
+}
+
+.intro__title {
+  padding-bottom: 40px;
+  color: @titles-blue;
+  font-family: "Galien", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 1.2px;
+}
+
+.intro__text {
+  width: 35%;
+  margin: 0;
+  padding-bottom: 70px;
+  color: @titles-blue;
+  font-size: 16px;
+  letter-spacing: 1.8px;
+  opacity: 0.6;
+}
+
+.intro__button {
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  background-color: @light-blue;
+
+  color: #ffffff;
+
+  &:hover {
+    background-color: lighten(@titles-blue, 10%);
+  }
+}

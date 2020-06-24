@@ -1,0 +1,63 @@
+.contacts__logo {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.contacts__logo-name {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 15px;
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+}
+
+.contacts__list {
+  .list-default;
+  padding-top: 40px;
+}
+
+.contacts__item {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  padding-bottom: 24px;
+
+  &::before {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  &--address {
+    &:hover {
+      text-decoration: #ffffff;
+      text-decoration-color: #ffffff;
+    }
+
+    &::before {
+      content: "A.";
+      font-weight: 700;
+    }
+  }
+
+  &--phone {
+    & a:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: "T.";
+      font-weight: 700;
+    }
+  }
+
+  &--email {
+    &::before {
+      content: "E.";
+      font-weight: 700;
+    }
+  }
+}
